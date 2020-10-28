@@ -3,12 +3,14 @@ import i18next from 'i18next';
 
 import { Nullable, User } from 'utils/types';
 
-import PATHS from './paths';
+import { PATHS } from './paths';
 
 const Home = lazy(() => import('screens/App'));
-/*const Login = lazy(() => import('../../screens/Login'));
+/* eg: Put all you others routes here
+const Login = lazy(() => import('../../screens/Login'));
 const RecoverPassword = lazy(() => import('../../screens/RecoverPassword'));
 const Registration = lazy(() => import('../../screens/Registration'));
+...
 */
 const MAIN_PUBLIC_PATH = PATHS.login;
 const MAIN_PRIVATE_PATH = PATHS.home;
